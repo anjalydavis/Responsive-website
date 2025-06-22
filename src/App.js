@@ -1310,11 +1310,22 @@ function About() {
 function Products() {
   return (
     <section id="products" className="section">
-      <h2>Our Products</h2>
+      <h2 className="products-title">Our Products</h2>
 
-      {/* Centered Image */}
+      {/* Centered Image with Ball */}
       <div className="product-image-container">
-        <img src="/images/product.jpg" alt="Zelion Product" className="product-image" />
+        <div className="bat-ball-wrapper">
+          <img
+            src="/images/cricket.png"
+            alt="Zelion Product"
+            className="product-image"
+          />
+          <img
+            src="/images/ball.png"
+            alt="Cricket Ball"
+            className="product-ball"
+          />
+        </div>
       </div>
 
       {/* Redirect Button */}
